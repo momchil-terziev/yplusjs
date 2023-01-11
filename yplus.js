@@ -114,6 +114,11 @@ function calc() {
   dy = yplus*vi/sqrt(t_w/density);
   
   ddy = createElement('h4','dy (m):     ' + yplus*vi/sqrt(t_w/density));
+  ddy.position(0,340);
+  n = createElement('h4','Number of layers:  ')
+  n.position(0,360);
+  
+  ddy = createElement('h4','dy (m):     ' + yplus*vi/sqrt(t_w/density));
   ddy.position(0,340)
   n = createElement('h4','Number of layers:  ')
   n.position(0,360)
