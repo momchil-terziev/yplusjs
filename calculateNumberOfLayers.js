@@ -13,12 +13,6 @@ function calculateNumberOfLayers() {
   t_w = (Cf * density * pow(speed, 2)) / 2;
   yplus = (sqrt(t_w / density) * dy) / (miu/density);
   
-  console.log('S^n',+pow(nlayers,1))
-  console.log('dy' + dy)
-  console.log('Cf' + Cf)
-  console.log('t_w' + t_w)
-  console.log('delta' + delta)
-  
     ddy.html(ddyLabel + 2*(yplus * miu/density) / sqrt(t_w / density));
   //n = createElement('h4','Number of layers:  ')
   //n.position(0,360)
