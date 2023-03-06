@@ -105,6 +105,16 @@ function calculate() {
     calculateNumberOfLayers();
   } else if (ypluschoice == "First layer thickness (m)") {
     firstLayerThickness();
+      upb = createButton("↑")
+  upb.position(360,380);
+  upb.mousePressed(roundLayersUp);
+  
+  downb = createButton("↓")
+  downb.position(380,380)
+    downb.mousePressed(roundLayersDown)
+    
+  roundupdown = createElement("h4","Round:")
+  roundupdown.position(300,360) 
   }
   
 
