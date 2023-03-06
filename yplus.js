@@ -80,6 +80,8 @@ function setup() {
   yDropdown.option("Number of layers");
   yDropdown.option("First layer thickness (m)");
   yDropdown.changed(yplusDropDownMenuChanged);
+  
+
 }
 
 function calculate() {
@@ -87,11 +89,26 @@ function calculate() {
 
   if (ypluschoice == "Target y+") {
     calcTargetYplus();
+    //
+  upb = createButton("↑")
+  upb.position(360,380);
+  upb.mousePressed(roundLayersUp);
+  
+  downb = createButton("↓")
+  downb.position(380,380)
+    downb.mousePressed(roundLayersDown)
+    
+  roundupdown = createElement("h4","Round:")
+  roundupdown.position(300,360) 
+    // 
   } else if (ypluschoice == "Number of layers") {
     calculateNumberOfLayers();
   } else if (ypluschoice == "First layer thickness (m)") {
     firstLayerThickness();
   }
+  
+
+  
 }
 
 
