@@ -21,6 +21,6 @@ function firstLayerThickness() {
   //n = createElement('h4','Number of layers:  ')
   //n.position(0,360)
   n.html(NumberOfLayersLabel + nLayers);
-  
+  return nLayers, Cf, t_w, achievedYplus
   
 }
