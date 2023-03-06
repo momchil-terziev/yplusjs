@@ -19,7 +19,7 @@ n.html(NumberOfLayersLabel + n1)
   yp.value(yplus) 
   
   const ypluschoice= yDropdown.value();
-  if (ypluschoice == "First layer thickness (m)") {
+  if (ypluschoice != "Target y+") {
     yDropdown.value('Target y+');
     
   }
