@@ -25,5 +25,6 @@ function calcTargetYplus() {
   //n = createElement('h4','Number of layers:  ')
   //n.position(0,360)
   n.html(NumberOfLayersLabel + log((-delta * (1 - S)) / (2 * dy) + 1) / log(S));
-  
+  nLayers = log((-delta * (1 - S)) / (2 * dy) + 1) / log(S);
+  return nLayers, Cf, t_w, density
 }
