@@ -12,7 +12,7 @@ function calculateNumberOfLayers() {
   Cf = 0.075 / pow(Math.log10(Re) - 2, 2);
   t_w = (Cf * density * pow(speed, 2)) / 2;
   yplus = (sqrt(t_w / density) * dy) / (miu/density);
-  
+  // 12
     ddy.html(ddyLabel + 2*(yplus * miu/density) / sqrt(t_w / density));
   //n = createElement('h4','Number of layers:  ')
   //n.position(0,360)
