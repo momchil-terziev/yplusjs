@@ -17,6 +17,7 @@ if (deltatype == '% of boundary layer') {
   } else if (deltatype == 'Distance (m)') {
      deltafull = 0.382*length/pow(Re,1/5);
      delta = d.value();
+     
   }
 
   return delta
